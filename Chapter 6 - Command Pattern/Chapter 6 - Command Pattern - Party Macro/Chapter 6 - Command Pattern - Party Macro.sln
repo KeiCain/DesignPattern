@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Chapter 6 - Command Pattern - Party Macro", "Chapter 6 - Command Pattern - Party Macro.vbproj", "{F83BD71C-093F-4EBF-911D-49B069CEC1B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F83BD71C-093F-4EBF-911D-49B069CEC1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83BD71C-093F-4EBF-911D-49B069CEC1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83BD71C-093F-4EBF-911D-49B069CEC1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83BD71C-093F-4EBF-911D-49B069CEC1B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

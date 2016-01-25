@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA00B328-98D0-46C6-B8A1-1624AE8796A9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>HFDPinVB.Chapter4.AbstractFactoryPattern.PizzaTestDrive</StartupObject>
+    <RootNamespace>HFDPinVB.Chapter4.AbstractFactoryPattern</RootNamespace>
+    <AssemblyName>Chapter 4 - Abstract Factory Pattern</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Chapter 4 - Abstract Factory Pattern.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Chapter 4 - Abstract Factory Pattern.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Ingredients\Cheeses\MozzarellaCheese.vb" />
+    <Compile Include="Classes\Ingredients\Cheeses\ReggianoCheese.vb" />
+    <Compile Include="Classes\Ingredients\Cheeses\ParmesanCheese.vb" />
+    <Compile Include="Classes\Ingredients\Clams\FrozenClams.vb" />
+    <Compile Include="Classes\Ingredients\Doughs\ThinCrustDough.vb" />
+    <Compile Include="Classes\Ingredients\Doughs\ThickCrustDough.vb" />
+    <Compile Include="Classes\Ingredients\Clams\FreshClams.vb" />
+    <Compile Include="Classes\Ingredients\Pepperonis\SlicedPepperoni.vb" />
+    <Compile Include="Classes\Ingredients\Sauces\PlumTomatoSauce.vb" />
+    <Compile Include="Classes\Ingredients\Sauces\MarinaraSauce.vb" />
+    <Compile Include="Classes\Ingredients\Veggies\BlackOlives.vb" />
+    <Compile Include="Classes\Ingredients\Veggies\Eggplant.vb" />
+    <Compile Include="Classes\Interfaces\IPepperoni.vb" />
+    <Compile Include="Classes\Interfaces\IVeggies.vb" />
+    <Compile Include="Classes\Interfaces\ICheese.vb" />
+    <Compile Include="Classes\Interfaces\IClams.vb" />
+    <Compile Include="Classes\Interfaces\ISauce.vb" />
+    <Compile Include="Classes\Interfaces\IDough.vb" />
+    <Compile Include="Classes\PizzaIngredientFactories\ChicagoPizzaIngredientFactory.vb" />
+    <Compile Include="Classes\PizzaIngredientFactories\NYPizzaIngredientFactory.vb" />
+    <Compile Include="Classes\Interfaces\IPizzaIngredientFactory.vb" />
+    <Compile Include="Classes\PizzaStore.vb" />
+    <Compile Include="Classes\PizzaStores\ChicagoPizzaStore.vb" />
+    <Compile Include="Classes\PizzaStores\NYPizzaStore.vb" />
+    <Compile Include="Classes\Pizzas\CheesePizza.vb" />
+    <Compile Include="Classes\Pizzas\ClamPizza.vb" />
+    <Compile Include="Classes\Pizzas\VeggiePizza.vb" />
+    <Compile Include="Classes\Pizzas\PepperoniPizza.vb" />
+    <Compile Include="Classes\Ingredients\Veggies\RedPepper.vb" />
+    <Compile Include="Classes\Ingredients\Veggies\Spinach.vb" />
+    <Compile Include="Classes\Ingredients\Veggies\Garlic.vb" />
+    <Compile Include="Classes\Ingredients\Veggies\Onion.vb" />
+    <Compile Include="Classes\Ingredients\Veggies\Mushroom.vb" />
+    <Compile Include="PizzaTestDrive.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes\Pizza.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
